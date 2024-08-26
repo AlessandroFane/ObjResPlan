@@ -1,0 +1,18 @@
+(define (problem Test/poco_connesso_problema1.pddl) (:domain similNavigation)
+(:objects
+    A - location
+    B - location
+    bus1 - bus
+    treno1 - train
+    aereo1 - plane
+)
+(:init
+    (road A B bus1)
+	(railway A B treno1)
+	(flight A B aereo1)
+    (at A)
+)
+(:goal (and
+    (at B)
+))
+)

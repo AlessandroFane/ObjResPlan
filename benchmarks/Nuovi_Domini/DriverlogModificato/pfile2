@@ -1,0 +1,71 @@
+(define (problem DLOG-2-2-2)
+	(:domain driverlog)
+	(:objects
+	driver1
+	a
+	b
+	c
+	d
+	e
+	f
+	g
+	airplane1
+	airplane2
+	train1
+	train2
+	train3
+	train4
+	car1
+	car2
+	car3
+	car4
+	car5
+	car6
+	car7
+	car8
+	)
+	(:init
+	(at driver1 a)
+	(DRIVER driver1)
+	(VEHICLE airplane1)
+	(VEHICLE airplane2)
+	(VEHICLE train1)
+	(VEHICLE train2)
+	(VEHICLE train3)
+	(VEHICLE train4)
+	(VEHICLE car1)
+	(VEHICLE car2)
+	(VEHICLE car3)
+	(VEHICLE car4)
+	(VEHICLE car5)
+	(VEHICLE car6)
+	(VEHICLE car7)
+	(VEHICLE car8)
+	(LOCATION a)
+	(LOCATION b)
+	(LOCATION c)
+	(LOCATION d)
+	(LOCATION e)
+	(LOCATION f)
+	(LOCATION g)
+	(path a c airplane1)
+	(path e g airplane2)
+	(path a f train1)
+	(path b f train2)
+	(path d g train3)
+	(path f g train4)
+	(path a b car1)
+	(path b c car2)
+	(path c d car3)
+	(path b d car4)
+	(path c e car5)
+	(path e d car6)
+	(path d f car7)
+	(path d g car8)
+)
+	(:goal
+	(at driver1 g)
+	)
+
+
+)

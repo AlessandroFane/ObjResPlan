@@ -1,0 +1,23 @@
+(define (problem DLOG-2-2-2)
+	(:domain driverlog)
+	(:objects
+	driver1
+	s1
+	s2
+	v1
+	v2
+	)
+	(:init
+	(at driver1 s1)
+	(DRIVER driver1)
+	(VEHICLE v1)
+	(VEHICLE v2)
+	(LOCATION s1)
+	(LOCATION s2)
+	(path s1 s2 v1)
+	(path s1 s2 v2)
+)
+	(:goal
+	(at driver1 s2)
+	)
+)

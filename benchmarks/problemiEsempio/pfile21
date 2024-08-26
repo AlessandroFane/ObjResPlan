@@ -1,0 +1,22 @@
+(define (problem dlog-2-2-2)
+  (:domain fittizio)
+  (:objects
+    A B C D
+  )
+  (:init
+    (at A)
+    (location A)
+    (location B)
+    (location C)
+    (location D)
+    (path A B)
+    (path B C)
+    (path A D)
+    (path D C)
+    (path B D)
+  )
+  (:goal 
+    (at C)
+  )
+)
+
